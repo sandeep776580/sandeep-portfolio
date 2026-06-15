@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Docker</title>
+  <rect width="128" height="128" rx="28" fill="#e0f2fe"/>
+  <g fill="#2496ed">
+    <rect x="30" y="58" width="13" height="12" rx="2"/>
+    <rect x="46" y="58" width="13" height="12" rx="2"/>
+    <rect x="62" y="58" width="13" height="12" rx="2"/>
+    <rect x="46" y="43" width="13" height="12" rx="2"/>
+    <rect x="62" y="43" width="13" height="12" rx="2"/>
+    <rect x="78" y="43" width="13" height="12" rx="2"/>
+    <rect x="62" y="28" width="13" height="12" rx="2"/>
+  </g>
+  <path fill="#2496ed" d="M18 75h84c-3 20-19 31-43 31-20 0-35-10-41-31z"/>
+  <path fill="#0f172a" d="M103 67c7 0 11-4 14-9 3 8 0 17-9 21-2-4-4-8-5-12z"/>
+</svg>

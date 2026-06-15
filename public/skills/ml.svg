@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Machine Learning</title>
+  <rect width="128" height="128" rx="28" fill="#20122d"/>
+  <g fill="none" stroke="#fb7185" stroke-linecap="round" stroke-width="5">
+    <path d="M34 38h24l16 26 20-31"/>
+    <path d="M34 88h26l14-24 20 28"/>
+    <path d="M58 38v50"/>
+  </g>
+  <g fill="#f472b6">
+    <circle cx="34" cy="38" r="8"/>
+    <circle cx="58" cy="38" r="7"/>
+    <circle cx="74" cy="64" r="9"/>
+    <circle cx="94" cy="33" r="8"/>
+    <circle cx="34" cy="88" r="8"/>
+    <circle cx="60" cy="88" r="7"/>
+    <circle cx="94" cy="92" r="8"/>
+  </g>
+  <text x="64" y="116" fill="#fce7f3" font-family="Arial, sans-serif" font-size="16" font-weight="800" text-anchor="middle">ML</text>
+</svg>

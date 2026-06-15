@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title">
+  <title id="title">AI Data Agent project cover</title>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset=".5" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".28" cy=".24" r=".58">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#halo)"/>
+  <g transform="translate(130 122)">
+    <rect width="940" height="506" rx="34" fill="#020617" opacity=".72"/>
+    <rect x="45" y="45" width="850" height="416" rx="24" fill="#0f172a"/>
+    <path fill="none" stroke="#334155" stroke-width="3" d="M105 115h730M105 195h730M105 275h730M105 355h730M190 85v315M340 85v315M490 85v315M640 85v315M790 85v315"/>
+    <path fill="none" stroke="#34d399" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M115 340c70-110 125-60 190-150 82-112 152 95 230 10 70-76 112-34 170-88 38-35 82-20 124-62"/>
+    <g fill="#a78bfa">
+      <circle cx="190" cy="245" r="14"/>
+      <circle cx="355" cy="183" r="14"/>
+      <circle cx="555" cy="199" r="14"/>
+      <circle cx="710" cy="112" r="14"/>
+      <circle cx="829" cy="50" r="14"/>
+    </g>
+    <g transform="translate(385 150)">
+      <rect width="170" height="170" rx="38" fill="#111827" stroke="#818cf8" stroke-width="5"/>
+      <circle cx="63" cy="72" r="13" fill="#e0e7ff"/>
+      <circle cx="107" cy="72" r="13" fill="#e0e7ff"/>
+      <rect x="55" y="112" width="60" height="10" rx="5" fill="#22d3ee"/>
+      <path d="M85 0v-35M42 20 18-5M128 20l24-25" stroke="#818cf8" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

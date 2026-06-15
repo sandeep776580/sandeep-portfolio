@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Node.js</title>
+  <rect width="128" height="128" rx="28" fill="#102a1b"/>
+  <path fill="#68a063" d="M64 12 108 38v52l-44 26-44-26V38z"/>
+  <path fill="#fff" d="M42 88V41h12l22 30V41h12v47H76L54 58v30z"/>
+  <path fill="#215732" d="M64 20 100 41v42l-36 21V90l24-14V48L64 34z" opacity=".45"/>
+</svg>

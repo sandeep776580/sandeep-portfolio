@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title">
+  <title id="title">Product Data Explorer project cover</title>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset=".5" stop-color="#7c2d12"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <g transform="translate(125 118)">
+    <rect width="950" height="510" rx="36" fill="#fff7ed"/>
+    <rect x="42" y="42" width="866" height="92" rx="26" fill="#fed7aa"/>
+    <rect x="78" y="78" width="190" height="18" rx="9" fill="#9a3412"/>
+    <rect x="325" y="72" width="120" height="30" rx="15" fill="#fb923c"/>
+    <rect x="468" y="72" width="120" height="30" rx="15" fill="#fdba74"/>
+    <rect x="611" y="72" width="120" height="30" rx="15" fill="#fed7aa"/>
+    <g transform="translate(70 190)">
+      <rect width="250" height="240" rx="24" fill="#fff"/>
+      <circle cx="125" cy="108" r="72" fill="#fb923c"/>
+      <path d="M125 36a72 72 0 0 1 61 110l-61-38z" fill="#0ea5e9"/>
+      <path d="M125 108 83 166a72 72 0 0 1-30-58z" fill="#22c55e"/>
+    </g>
+    <g transform="translate(370 190)">
+      <rect width="500" height="240" rx="24" fill="#fff"/>
+      <path fill="none" stroke="#e5e7eb" stroke-width="3" d="M50 55h400M50 105h400M50 155h400M50 205h400"/>
+      <path fill="none" stroke="#ea580c" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" d="M55 190c70-112 115-60 170-105 72-58 126 32 190-35"/>
+      <circle cx="225" cy="85" r="13" fill="#ea580c"/>
+      <circle cx="415" cy="50" r="13" fill="#0ea5e9"/>
+    </g>
+  </g>
+</svg>

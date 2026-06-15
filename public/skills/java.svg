@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Java</title>
+  <rect width="128" height="128" rx="28" fill="#f8fafc"/>
+  <path fill="none" stroke="#f89820" stroke-linecap="round" stroke-width="8" d="M67 18c19 15-28 22 0 41"/>
+  <path fill="none" stroke="#f89820" stroke-linecap="round" stroke-width="6" d="M80 27c16 18-22 20-6 35"/>
+  <path fill="none" stroke="#5382a1" stroke-linecap="round" stroke-width="7" d="M35 74c19 8 45 7 62-1M31 89c22 8 51 8 73-2M43 104c16 5 38 5 54-1"/>
+  <path fill="#5382a1" d="M48 61h32c-6 8-26 10-32 0z"/>
+</svg>
