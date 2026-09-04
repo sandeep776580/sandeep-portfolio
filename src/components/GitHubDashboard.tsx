@@ -1,11 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { fetchGitHubProfile, fetchGitHubRepos } from "../lib/github";
+import Image from "next/image";
+import { fetchGitHubProfile, fetchGitHubRepos, type GitHubProfile, type GitHubRepo } from "../lib/github";
 
 export default function GitHubDashboard({ username = "sandeep776580" }: { username?: string }) {
-  const [profile, setProfile] = useState<any>(null);
-  const [repos, setRepos] = useState<any[]>([]);
+  const [profile, setProfile] = useState<GitHubProfile | null>(null);
+  const [repos, setRepos] = useState<GitHubRepo[]>([]);
 
   useEffect(() => {
     fetchGitHubProfile(username)
@@ -22,7 +23,7 @@ export default function GitHubDashboard({ username = "sandeep776580" }: { userna
         <h2 className="text-2xl font-bold mb-4">GitHub</h2>
         {profile ? (
           <div className="flex items-center gap-4">
-            <img src={profile.avatar_url} alt={profile.login} className="w-16 h-16 rounded-full" />
+            <Image src={profile.avatar_url} alt={profile.login} width={64} height={64} className="h-16 w-16 rounded-full" />
             <div>
               <div className="font-medium">{profile.name || profile.login}</div>
               <div className="text-sm text-zinc-500">{profile.public_repos} repositories</div>

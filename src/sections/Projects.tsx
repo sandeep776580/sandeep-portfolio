@@ -17,12 +17,12 @@ export default function Projects() {
   });
 
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="section-shell py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="mb-2 text-sm font-semibold uppercase text-sky-300">Selected Work</p>
-            <h2 className="text-3xl font-bold text-white">Featured Projects</h2>
+            <p className="section-eyebrow">PROJECT MODULES / 06</p>
+            <h2 className="section-title">Selected work</h2>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <input
@@ -47,7 +47,7 @@ export default function Projects() {
           {filtered.map((p) => (
             <article
               key={p.id}
-              className="group overflow-hidden rounded-lg border border-white/10 bg-zinc-950/70 transition duration-300 hover:-translate-y-1 hover:border-sky-400/50 hover:shadow-2xl hover:shadow-sky-950/25"
+              className="group overflow-hidden rounded-lg border border-white/10 bg-zinc-950/70 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/50 hover:shadow-2xl hover:shadow-cyan-950/25"
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-zinc-900">
                 <Image
@@ -61,7 +61,7 @@ export default function Projects() {
               </div>
               <div className="p-5">
                 <div className="mb-3 inline-flex rounded-md border border-sky-400/20 bg-sky-400/10 px-2.5 py-1 text-xs font-medium text-sky-200">
-                  {p.category}
+                  MODULE / {p.category}
                 </div>
                 <h3 className="mb-2 text-lg font-semibold text-white">{p.title}</h3>
                 <p className="mb-4 min-h-12 text-sm leading-6 text-zinc-400">{p.description}</p>
@@ -75,7 +75,7 @@ export default function Projects() {
                 <div className="flex items-center gap-3">
                   <a href={p.github} className="text-sm font-medium text-zinc-300 underline-offset-4 hover:text-sky-300 hover:underline">GitHub</a>
                   {p.demo && <a href={p.demo} className="text-sm font-medium text-zinc-300 underline-offset-4 hover:text-sky-300 hover:underline">Live</a>}
-                  <a href={`/projects/${p.id}`} className="ml-auto inline-block rounded-md bg-sky-500 px-3 py-1.5 text-sm font-medium text-white hover:bg-sky-400">Details</a>
+                  <a href={`/projects/${p.id}`} className="ml-auto inline-block rounded-md border border-cyan-300/30 bg-cyan-300/10 px-3 py-1.5 text-sm font-medium text-cyan-50 hover:bg-cyan-300/20">Open module</a>
                 </div>
               </div>
             </article>

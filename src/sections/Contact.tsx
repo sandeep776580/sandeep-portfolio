@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { AtSign, GitFork, Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -39,14 +40,15 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 px-6">
+    <section id="contact" className="section-shell py-24 px-6">
       <div className="max-w-4xl mx-auto">
+        <p className="section-eyebrow text-center">ESTABLISH CONNECTION</p>
         <motion.h2
           initial={{ opacity: 0, y: 6 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold mb-2 text-center"
+          className="section-title mb-2 text-center"
         >
           Get In Touch
         </motion.h2>
@@ -57,7 +59,7 @@ export default function Contact() {
           transition={{ delay: 0.1 }}
           className="text-center text-zinc-300 mb-12 max-w-2xl mx-auto"
         >
-          Have a question or want to collaborate? Drop me a message and I'll get back to you soon.
+          Have a question or want to collaborate? Drop me a message and I&apos;ll get back to you soon.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -68,8 +70,8 @@ export default function Contact() {
             transition={{ delay: 0.1 }}
             className="p-6 bg-zinc-900/40 border border-zinc-700 rounded-xl hover:border-sky-500 hover:bg-zinc-900/60 transition"
           >
-            <div className="text-2xl mb-2">✉️</div>
-            <h3 className="font-semibold text-sky-300 mb-1">Email</h3>
+            <Mail className="mb-4 text-cyan-300" size={22} />
+            <h3 className="font-semibold text-cyan-100 mb-1">Email</h3>
             <a href="mailto:sandeep.official.593@gmail.com" className="text-zinc-300 hover:text-sky-400 text-sm break-all">
               sandeep.official.593@gmail.com
             </a>
@@ -82,8 +84,8 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="p-6 bg-zinc-900/40 border border-zinc-700 rounded-xl hover:border-sky-500 hover:bg-zinc-900/60 transition"
           >
-            <div className="text-2xl mb-2">💼</div>
-            <h3 className="font-semibold text-sky-300 mb-1">LinkedIn</h3>
+            <AtSign className="mb-4 text-cyan-300" size={22} />
+            <h3 className="font-semibold text-cyan-100 mb-1">LinkedIn</h3>
             <a href="https://linkedin.com/in/contactsandeep786/" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-sky-400 text-sm">
               View Profile →
             </a>
@@ -96,8 +98,8 @@ export default function Contact() {
             transition={{ delay: 0.3 }}
             className="p-6 bg-zinc-900/40 border border-zinc-700 rounded-xl hover:border-sky-500 hover:bg-zinc-900/60 transition"
           >
-            <div className="text-2xl mb-2">🐙</div>
-            <h3 className="font-semibold text-sky-300 mb-1">GitHub</h3>
+            <GitFork className="mb-4 text-cyan-300" size={22} />
+            <h3 className="font-semibold text-cyan-100 mb-1">GitHub</h3>
             <a href="https://github.com/sandeep776580" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-sky-400 text-sm">
               View Code →
             </a>
@@ -162,7 +164,7 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               className="mb-6 p-4 bg-green-900/40 border border-green-700 rounded-lg text-green-300 text-sm"
             >
-              ✓ Message sent successfully! I'll get back to you soon.
+              ✓ Message sent successfully! I&apos;ll get back to you soon.
             </motion.div>
           )}
 

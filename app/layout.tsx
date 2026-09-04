@@ -1,32 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import { ThemeProvider } from "../src/providers/theme-provider";
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-
 export const metadata: Metadata = {
-  title: "Sandeep | Software Engineer",
+  title: "Sandeep | Software Engineer & AI Developer",
   description:
-    "Software Engineer, AI Developer, Full Stack Developer and Data Analyst Portfolio",
-};
-
-export const openGraph = {
-  title: "Sandeep | Software Engineer",
-  description: "Building intelligent applications, scalable systems, data-driven solutions.",
-  url: "https://example.com",
-  siteName: "Sandeep Portfolio",
-  images: [
-    {
-      url: "https://example.com/og-image.png",
-      width: 1200,
-      height: 630,
-      alt: "Sandeep Portfolio",
-    },
-  ],
-  locale: "en_US",
-  type: "website",
+    "Software Engineer, AI Developer, Full Stack Developer and Data Analyst, Data Engineer Portfolio",
+  openGraph: { title: "Sandeep | Software Engineer & AI Developer", description: "Building intelligent applications, scalable systems, and data-driven solutions.", type: "website" },
+  twitter: { card: "summary", title: "Sandeep | Software Engineer", description: "AI, full-stack, and data-driven products." },
 };
 
 export default function RootLayout({
@@ -35,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="google-site-verification" content="" />
         {process.env.NEXT_PUBLIC_GA_ID && (

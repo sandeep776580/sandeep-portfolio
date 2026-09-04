@@ -39,14 +39,15 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6">
+    <section id="experience" className="section-shell py-24 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6">Experience</h2>
+        <p className="section-eyebrow">CAREER TIMELINE</p>
+        <h2 className="section-title mb-10">Experience</h2>
         <div className="relative">
-          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-zinc-700" />
+          <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-300 via-cyan-300/20 to-transparent" />
           <div className="pl-12">
             {items.map((it, idx) => (
-              <div key={idx} className="mb-8">
+              <div key={idx} className="mb-8 rounded-xl border border-white/[.07] bg-white/[.02] p-5 transition hover:border-cyan-300/25">
                 <div className="text-xl font-semibold">{it.title}</div>
                 <div className="text-sm text-zinc-400">{it.org} • {it.duration}</div>
                 {"location" in it && (

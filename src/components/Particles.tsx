@@ -14,7 +14,7 @@ export default function Particles() {
 
     let w = (canvasEl.width = window.innerWidth);
     let h = (canvasEl.height = window.innerHeight);
-    const particles: any[] = [];
+    const particles: { x: number; y: number; r: number; vx: number; vy: number; alpha: number }[] = [];
 
     function onResize() {
       if (!canvasEl) return;
@@ -49,7 +49,7 @@ export default function Particles() {
         if (p.y > h) p.y = 0;
 
         ctx.beginPath();
-        ctx.fillStyle = `rgba(99,102,241,${p.alpha})`;
+        ctx.fillStyle = `rgba(103,232,249,${p.alpha * 0.55})`;
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
       });

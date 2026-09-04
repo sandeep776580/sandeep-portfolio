@@ -22,7 +22,8 @@ export async function POST(request: Request) {
     })
 
     return NextResponse.json({ ok: true })
-  } catch (e: any) {
-    return NextResponse.json({ error: e.message || 'Failed to send' }, { status: 500 })
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'Failed to send'
+    return NextResponse.json({ error: message }, { status: 500 })
   }
 }
