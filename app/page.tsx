@@ -8,7 +8,6 @@ import Experience from "../src/sections/Experience";
 import Counters from "../src/components/Counters";
 import Footer from "../src/components/Footer";
 import Cursor from "../src/components/Cursor";
-import SandeepAI from "../src/components/SandeepAI";
 
 export default function Home() {
   return (
@@ -28,8 +27,6 @@ export default function Home() {
           </section>
         </div>
       </div>
-
-      <SandeepAI />
 
       <section className="py-10 px-6 border-y border-white/[.06] bg-white/[.015]">
         <div className="max-w-6xl mx-auto">
